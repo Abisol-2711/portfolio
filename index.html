@@ -112,67 +112,114 @@
           class="who__img"
         />
       </section>
-      <section>
-        <h3>Proyectos</h3>
-        <div>
-          <div>
-            <p>Proyecto 1</p>
-            <img src="" alt="" />
+      <section class="proyects">
+        <h3 class="proyects__title">Proyectos</h3>
+        <div class="proyects__content">
+          <div class="content__proyect">
+            <p class="proyect__title">Proyecto 1</p>
+            <img src="img/Foto.svg" alt="" class="proyect__img" />
           </div>
-          <div>
-            <p>Proyecto 2</p>
-            <img src="" alt="" />
+          <div class="content__proyect">
+            <p class="proyect__title">Proyecto 2</p>
+            <img src="img/Foto.svg" alt="" class="proyect__img" />
           </div>
-          <div>
-            <p>Proyecto 3</p>
-            <img src="" alt="" />
+          <div class="content__proyect">
+            <p class="proyect__title">Proyecto 3</p>
+            <img src="img/Foto.svg" alt="" class="proyect__img" />
           </div>
-          <div>
-            <p>Proyecto 4</p>
-            <img src="" alt="" />
-          </div>
-        </div>
-      </section>
-      <section>
-        <h3>Habilidades</h3>
-        <div>
-          <div>
-            <p>Habilidad 1</p>
-            <img src="" alt="" />
-          </div>
-          <div>
-            <p>Habilidad 2</p>
-            <img src="" alt="" />
-          </div>
-          <div>
-            <p>Habilidad 3</p>
-            <img src="" alt="" />
-          </div>
-          <div>
-            <p>Habilidad 4</p>
-            <img src="" alt="" />
+          <div class="content__proyect">
+            <p class="proyect__title">Proyecto 4</p>
+            <img src="img/Foto.svg" alt="" class="proyect__img" />
           </div>
         </div>
       </section>
-      <section>
-        <h3>Contacto</h3>
-        <p>
+      <section class="skills">
+        <h3 class="skills__title">Habilidades</h3>
+        <div class="skills__content">
+          <div class="content__skill">
+            <img src="img/skills/HTML.svg" alt="" class="skill__img" />
+            <p class="skill__title">HTML</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/CSS.svg" alt="" class="skill__img" />
+            <p class="skill__title">CSS</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/Javascript.svg" alt="" class="skill__img" />
+            <p class="skill__title">Javascript</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/React.svg" alt="" class="skill__img" />
+            <p class="skill__title">React</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/Redux.svg" alt="" class="skill__img" />
+            <p class="skill__title">Redux</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/Node.svg" alt="" class="skill__img" />
+            <p class="skill__title">Node JS</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/Express.svg" alt="" class="skill__img" />
+            <p class="skill__title">Express</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/Postgre.svg" alt="" class="skill__img" />
+            <p class="skill__title">Postgre SQL</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/sequelize.svg" alt="" class="skill__img" />
+            <p class="skill__title">Sequelize</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/Figma.svg" alt="" class="skill__img" />
+            <p class="skill__title">Figma</p>
+          </div>
+          <div class="content__skill">
+            <img src="img/skills/Git.svg" alt="" class="skill__img" />
+            <p class="skill__title">Git</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h3 class="contact__title">Contacto</h3>
+        <p class="contact__text">
           Si quieres ponerte en contacto conmigo, hablar conmigo sobre una
           colaboración en un proyecto o simplemente decir hola, complete su
           información en el siguiente formulario a continuación o envía un
           correo electrónico a <a href="">solabigail00@hotmail.com</a> y
           hablemos. Espero tener noticias suyas muy pronto :)
         </p>
-        <form action="">
-          <label for="">Nombre</label>
-          <input type="text" />
-          <label for="">Email</label>
-          <input type="email" />
-          <label for="">Mensaje</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+        <form action="" class="contact__form">
+          <div class="contact__content">
+            <div class="content__name">
+              <input type="text" required="" class="name__input" />
+              <label for="name" class="name__label">Nombre</label>
+            </div>
+            <div class="content__mail">
+              <input type="email" required="" class="mail__input" />
+              <label for="email" class="mail__label">Email</label>
+            </div>
+          </div>
+          <div class="content__textarea">
+            <label for="" class="textarea__label">Mensaje</label>
+            <textarea
+              name=""
+              id=""
+              cols="150"
+              rows="10"
+              class="textarea__input"
+            ></textarea>
+          </div>
         </form>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p>Email</p>
+      <p>Dirección</p>
+      <p>Linkedin</p>
+      <p>copyright 2023. SARF</p>
+    </footer>
   </body>
 </html>
