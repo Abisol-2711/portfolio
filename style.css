@@ -495,6 +495,9 @@
   margin-top: 1em;
   background: #f7892f;
   background: linear-gradient(180deg, #f7892f 0%, #6a7b8e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact__title {
@@ -506,135 +509,192 @@
 .contact__text {
   padding-left: 1em;
   width: 90vw;
+  align-self: flex-start;
 }
 
 .contact__form {
   padding: 2em 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 90vw;
+  text-align: center;
 }
 
 .contact__content {
+  display: flex;
+  justify-content: center;
+  gap: 9.4em;
 }
 
-.content__name {
-  margin: 1em 0 1em 0;
-  max-width: 190px;
-  position: relative;
-}
-
-.name__input {
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid #c8c8c8;
-  background-color: transparent;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.name__label {
-  font-size: 100%;
-  position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  color: #646464;
-}
-
-.content__name :is(.name__input:focus, .name__input:valid) ~ .name__label {
-  transform: translateY(-50%) scale(0.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: #e8e8e8;
-}
-
-.content__name :is(.name__input:focus, .name__input:valid) {
-  border-color: rgb(150, 150, 200);
-}
-
-.content__mail {
-  margin: 1em 0 1em 0;
-  max-width: 190px;
-  position: relative;
-}
-
-.mail__input {
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid #c8c8c8;
-  background-color: transparent;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.mail__label {
-  font-size: 100%;
-  position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  color: #646464;
-}
-
-.content__mail :is(.mail__input:focus, .mail__input:valid) ~ .mail__label {
-  transform: translateY(-50%) scale(0.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: #e8e8e8;
-}
-
-.content__mail :is(.mail__input:focus, .mail__input:valid) {
-  border-color: rgb(150, 150, 200);
-}
-
+.content__mail,
+.content__name,
 .content__textarea {
-  margin: 1em 0 1em 0;
-  max-width: 190px;
   position: relative;
+  margin-bottom: 4em;
+}
+
+.mail__input,
+.name__input,
+.textarea__input {
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 500px;
+  border: none;
+  border-bottom: 1px solid #37404b;
+  background: transparent;
 }
 
 .textarea__input {
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid #c8c8c8;
-  background-color: transparent;
-  border-radius: 20px;
+  height: 10em;
   width: 100%;
+  resize: none;
 }
 
+.mail__input:focus,
+.name__input:focus,
+.textarea__input:focus {
+  outline: none;
+}
+
+.mail__label,
+.name__label,
 .textarea__label {
-  font-size: 100%;
+  color: #37404b;
   position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
   pointer-events: none;
-  transition: all 0.3s ease;
-  color: #646464;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 
-.content__textarea
-  :is(.textarea__input:focus, .textarea__input:valid)
-  ~ .textarea__label {
-  transform: translateY(-50%) scale(0.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: #e8e8e8;
+.mail__input:focus ~ label,
+.mail__input:valid ~ label,
+.name__input:focus ~ label,
+.name__input:valid ~ label,
+.textarea__input:focus ~ label,
+.textarea__input:valid ~ label {
+  top: -20px;
+  color: #dcc8aa;
 }
 
-.content__textarea :is(.textarea__input:focus, .textarea__input:valid) {
-  border-color: rgb(150, 150, 200);
+.bar {
+  position: relative;
+  display: block;
+  width: 500px;
+}
+
+.bar__textarea {
+  width: 72em;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #dcc8aa;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.mail__input:focus ~ .bar:before,
+.mail__input:focus ~ .bar:after,
+.name__input:focus ~ .bar:before,
+.name__input:focus ~ .bar:after,
+.textarea__input:focus ~ .bar:before,
+.textarea__input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.mail__input:focus ~ .highlight,
+.name__input:focus ~ .highlight,
+.textarea__input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  position: relative;
+  cursor: pointer;
+  color: #37404b;
+}
+
+.btn::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: scaleX(0.2) scaleY(0.5) translate(250%, 100%);
+  border-top: solid 2px #37404b;
+  border-left: solid 4px #37404b;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%) scaleX(0.2) scaleY(0.5);
+  border-bottom: solid 2px #37404b;
+  border-right: solid 4px #37404b;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  color: #dcc8aa;
+}
+
+.btn:hover::before {
+  transform: translate(0%, 0%) scaleX(1) scaleY(1);
+  border-top: solid 1px #989098;
+  border-left: solid 1px #989098;
+}
+
+.btn:hover::after {
+  transform: scaleX(1) scaleY(1) translate(0%, 0%);
+  border-bottom: solid 1px #989098;
+  border-right: solid 1px #989098;
 }
 
 /*Footer*/

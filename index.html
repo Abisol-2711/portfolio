@@ -194,24 +194,31 @@
         <form action="" class="contact__form">
           <div class="contact__content">
             <div class="content__name">
-              <input type="text" required="" class="name__input" />
+              <input type="text" name="name" required class="name__input" />
+              <span class="highlight"></span>
+              <span class="bar"></span>
               <label for="name" class="name__label">Nombre</label>
             </div>
             <div class="content__mail">
-              <input type="email" required="" class="mail__input" />
+              <input type="mail" name="email" required class="mail__input" />
+              <span class="highlight"></span>
+              <span class="bar"></span>
               <label for="email" class="mail__label">Email</label>
             </div>
           </div>
           <div class="content__textarea">
-            <label for="" class="textarea__label">Mensaje</label>
             <textarea
-              name=""
-              id=""
+              name="textarea"
               cols="150"
               rows="10"
               class="textarea__input"
+              required
             ></textarea>
+            <span class="highlight"></span>
+            <span class="bar bar__textarea"></span>
+            <label for="textarea" class="textarea__label">Mensaje</label>
           </div>
+          <button class="btn">Enviar</button>
         </form>
       </section>
     </main>
