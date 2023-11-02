@@ -16,7 +16,7 @@ body {
 /*HEADER*/
 
 .header {
-  background-color: hsla(272, 15%, 42%, 0.14);
+  background-color: #6c5b7b24;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +24,7 @@ body {
   height: 3em;
   width: 100vw;
   position: fixed;
+  z-index: 1000;
 }
 
 .header__logo {
@@ -526,8 +527,9 @@ body {
 /*Proyects*/
 
 .proyects {
-  padding-top: 8em;
-  padding-bottom: 2em;
+  /* padding-top: 8em; */
+  /* padding-bottom: 2em; */
+  margin: 7em 0 15em 0;
 }
 
 .proyects__title {
@@ -623,7 +625,6 @@ body {
 /*Skills*/
 
 .skills {
-  margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -632,8 +633,8 @@ body {
 }
 
 .skills__title {
+  padding-top: em;
   text-align: center;
-  padding: 1em 0;
   font-size: 2em;
   font-family: 'Playpen Sans', cursive;
 }
@@ -677,13 +678,13 @@ body {
 }
 
 .skills__image--variant1 {
-  bottom: 10em;
-  left: 68.2em;
+  bottom: 10vw;
+  left: 120vh;
 }
 
 .skills__image--variant2 {
-  top: 30em;
-  right: 63.6em;
+  top: 40vw;
+  right: 112vh;
 }
 
 /*Contact*/
@@ -693,7 +694,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   margin-top: 30em;
-  height: 65em;
+  height: 55em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -938,7 +939,7 @@ body {
 @media (prefers-color-scheme: dark) {
   /*Dark Mode*/
   body {
-    background-color: #b8abaf;
+    background-color: #5c3a44;
   }
 
   .about {
