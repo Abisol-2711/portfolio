@@ -943,8 +943,8 @@ body {
 /*FOOTER*/
 
 .footer {
-  background-image: url(img/backgroundFooter.png);
-  background-position: bottom;
+  background-image: url(img/BGNFooter.png);
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -993,8 +993,11 @@ body {
     background-image: url(img/backgroundDark.png);
   }
 
-  .contact,
-  .footer {
+  .contact {
     background-image: url(img/backgroundFooterDark.png);
+  }
+
+  .footer {
+    background-image: url(img/BGNFooterDark.png);
   }
 }

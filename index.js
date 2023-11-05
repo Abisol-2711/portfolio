@@ -23,7 +23,7 @@ darkModeSwitch.addEventListener("click", () => {
     const imageSuffix = isDarkMode ? "Dark" : "";
     aboutDark.style.backgroundImage = `url('img/background${imageSuffix}.png')`;
     contactDark.style.backgroundImage = `url('img/backgroundFooter${imageSuffix}.png')`;
-    footerDark.style.backgroundImage = `url('img/backgroundFooter${imageSuffix}.png')`;
+    footerDark.style.backgroundImage = `url('img/BGNFooter${imageSuffix}.png')`;
 });
 
 window.addEventListener("scroll", () => {

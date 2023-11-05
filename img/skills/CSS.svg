@@ -1,14 +1,1 @@
-<svg width="46" height="55" viewBox="0 0 46 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 2L1 15V40.5L23 53L45 40.5V15L23 2Z" fill="url(#paint0_linear_594_3455)" stroke="#0071BF" stroke-width="2"/>
-<path d="M10.5 19L10 14H35L34.5 19L23 24H34L33 39L22.5 42L12.5 39L11.5 31.5H16.5L17 35L22.5 36.5L28.5 35L29 29H11.5L11 24L23 19H10.5Z" fill="url(#paint1_linear_594_3455)"/>
-<defs>
-<linearGradient id="paint0_linear_594_3455" x1="1" y1="28" x2="45" y2="28" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0071BF"/>
-<stop offset="1" stop-color="#00ACE4"/>
-</linearGradient>
-<linearGradient id="paint1_linear_594_3455" x1="11.5" y1="26" x2="33.5" y2="26" gradientUnits="userSpaceOnUse">
-<stop stop-color="#EBEBEB"/>
-<stop offset="1" stop-color="white"/>
-</linearGradient>
-</defs>
-</svg>
+<svg width="46" height="55" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 2 1 15v25.5L23 53l22-12.5V15L23 2z" fill="url(#a)" stroke="#0071BF" stroke-width="2"/><path d="m10.5 19-.5-5h25l-.5 5L23 24h11l-1 15-10.5 3-10-3-1-7.5h5L17 35l5.5 1.5 6-1.5.5-6H11.5l-.5-5 12-5H10.5z" fill="url(#b)"/><defs><linearGradient id="a" x1="1" y1="28" x2="45" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#0071BF"/><stop offset="1" stop-color="#00ACE4"/></linearGradient><linearGradient id="b" x1="11.5" y1="26" x2="33.5" y2="26" gradientUnits="userSpaceOnUse"><stop stop-color="#EBEBEB"/><stop offset="1" stop-color="#fff"/></linearGradient></defs></svg>
