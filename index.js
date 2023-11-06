@@ -7,7 +7,6 @@ const darkModeSwitch = d.getElementById("darkModeSwitch");
 const header = d.querySelector(".header");
 const aboutDark = d.querySelector(".about");
 const contactDark = d.querySelector(".contact");
-const footerDark = d.querySelector(".footer");
 
 btnDownScroll.addEventListener("click", () => {
     sobreMiSection.scrollIntoView({ behavior: "smooth" });
@@ -23,7 +22,6 @@ darkModeSwitch.addEventListener("click", () => {
     const imageSuffix = isDarkMode ? "Dark" : "";
     aboutDark.style.backgroundImage = `url('img/background${imageSuffix}.png')`;
     contactDark.style.backgroundImage = `url('img/backgroundFooter${imageSuffix}.png')`;
-    footerDark.style.backgroundImage = `url('img/BGNFooter${imageSuffix}.png')`;
 });
 
 window.addEventListener("scroll", () => {
