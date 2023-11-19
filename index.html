@@ -7,9 +7,12 @@
     <title>Portafolio</title>
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cambay&family=Playpen+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cambay&family=Playpen+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
@@ -18,10 +21,7 @@
   </head>
   <body>
     <header class="header" aria-label="Encabezado de la página">
-      <a href="#" class="header__logo-link">
-        <img class="header__logo" src="img/Logo.svg" alt="Logotipo" />
-      </a>
-      <nav class="header__menu"  aria-label="Menú de navegación">
+      <nav class="header__menu" aria-label="Menú de navegación">
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#inicio" class="item__link">Inicio</a>
@@ -40,7 +40,7 @@
           </li>
         </ul>
       </nav>
-      <div class="wrapper">
+      <!-- <div class="wrapper">
         <input
           type="checkbox"
           name="checkbox"
@@ -48,49 +48,80 @@
           id="darkModeSwitch"
           aria-label="Cambiar a modo oscuro o claro"
         />
-      </div>
+      </div> -->
     </header>
     <main class="main">
       <section class="about" id="inicio" aria-label="Inicio">
-        <h1 class="about__title"  aria-label="Título: Sol Sol Razuri">
+        <h1 class="about__title" aria-label="Título: Sol Sol Razuri">
           Soy <span class="title__span">Sol Rázuri</span>
         </h1>
-        <h2 class="about__title" aria-label="Subtítulo: Una desarrolladora Frontend">
+        <h2
+          class="about__title"
+          aria-label="Subtítulo: Una desarrolladora Frontend"
+        >
           Una desarrolladora <span class="title__span">Frontend</span>
         </h2>
         <button class="btn__down" aria-label="Desplazarse hacia abajo">
-          <i class="fa-solid fa-angle-down fa-2xl" style="color: #e6d5da"></i>
+          <i class="fa-solid fa-angle-down fa-xl" style="color: #e6d5da"></i>
         </button>
+        <div class="wave" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M-6.02,-10.44 C129.98,150.84 349.20,-50.10 500.18,148.84 L501.31,154.82 L0.00,150.33 Z"
+              style="stroke: none; fill: #f4e7eb"
+            ></path>
+          </svg>
+        </div>
       </section>
       <section class="who" id="sobreMi" aria-label="Sección: Sobre mí">
         <div class="who__content-texts">
-          <h3 class="content-texts__title" aria-label="Título: Sobre mí">Sobre mi</h3>
+          <h3 class="content-texts__title" aria-label="Título: Sobre mí">
+            Sobre mi
+          </h3>
           <p class="content-texts__text" aria-describedby="about-description">
             Soy chica de 22 años y soy de Argentina. Soy una persona creativa,
             dedicada, comprometida y proactiva que busca crecer constantemente
             tanto personal como profesionalmente. Cuando descubri el diseño web
-            en la secundaria, me di cuenta de que encajaría perfectamente.
-            Llevo un año programando y estoy estudiando la carrera
-            de Licenciatura en Informática.
+            en la secundaria, me di cuenta de que encajaría perfectamente. Llevo
+            un año programando y estoy estudiando la carrera de Licenciatura en
+            Informática.
           </p>
-          <p>
-              <h4 class="content-texts__subtitle" aria-label="Título: Actualmente estoy trabajando en">Actualmente estoy trabajando en:</h4>
-              <p class="content-texts__text" aria-describedby="current-work-description">
-                Mejorar mis habilidades y comprensión y React. Además, diviértete
-                con #100DaysOfCode creando y animando cosas a través de CSS.
-              </p>
+          <h4
+            class="content-texts__subtitle"
+            aria-label="Título: Actualmente estoy trabajando en"
+          >
+            Actualmente estoy trabajando en:
+          </h4>
+          <p
+            class="content-texts__text"
+            aria-describedby="current-work-description"
+          >
+            Mejorar mis habilidades y comprensión y React. Además, diviértete
+            con #100DaysOfCode creando y animando cosas a través de CSS.
           </p>
-          <div>
-            <div class="content__btns">
-              <button class="btn__cv" type="button" aria-label="Ver mi CV">CV</button>
-              <button class="btn__link" aria-label="Visitar mi perfil de Linkedin">
+          <div class="content__btn">
+            <button class="btn__cv" type="button" aria-label="Ver mi CV">
+              CV
+            </button>
+            <div class="content__btns-links">
+              <button
+                class="btn__link"
+                aria-label="Visitar mi perfil de Linkedin"
+              >
                 <i
                   class="fa-brands fa-linkedin fa-2xl link__icon"
                   style="color: #1d569f"
                 ></i>
                 <span class="tooltip linkedin">Linkedin</span>
               </button>
-              <button class="btn__link" aria-label="Visitar mi perfil de Github">
+              <button
+                class="btn__link"
+                aria-label="Visitar mi perfil de Github"
+              >
                 <i
                   class="fa-brands fa-github fa-2xl link__icon"
                   style="color: #000000"
@@ -103,183 +134,321 @@
         <img src="img/PhotoCV.png" alt="Foto de Sol Razuri" class="who__img" />
       </section>
       <section class="proyects" id="proyectos" aria-label="Sección: Proyectos">
-        <h3 class="proyects__title" aria-label="Título: Proyectos">Proyectos</h3>
-        <div class="proyects__content">
-          <div class="content__proyect">
-            <div class="content__proyect-text">
-              <h4 class="proyect__title" aria-label="Título: Proyecto 1">Proyecto 1</h4>
-              <p class="proyect__text" aria-label="Descripción del Proyecto 1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                magnam alias voluptates nostrum. Sapiente, incidunt fugit?
-                Asperiores, commodi eveniet, sint omnis, reiciendis animi ad
-                iste et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Amet magnam alias voluptates
-                nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
-                sint omnis, reiciendis animi ad iste et delectus ipsa neque
-                eaque.
-              </p>
-              <div class="content__skills">
-                <img src="img/skills/HTML.svg" alt="Icono de HTML" class="img__skill" />
-                <img src="img/skills/CSS.svg" alt="Icono de CSS" class="img__skill" />
-                <img
-                  src="img/skills/Javascript.svg"
-                  alt="Icono de Javascript"
-                  class="img__skill"
-                />
-              </div>
-              <div class="content__btns">
-                <button class="btn__degradado" aria-label="Ver el Proyecto 1 en la web">Ver en la web</button>
-                <button class="btn__degradado" aria-label="Abrir el Repositorio del Proyecto 1 en Github">Repositorio en Github</button>
-              </div>
+        <h3 class="proyects__title" aria-label="Título: Proyectos">
+          Proyectos
+        </h3>
+        <article class="content__proyect reverse">
+          <div class="content__proyect-text">
+            <h4 class="proyect__title" aria-label="Título: Proyecto 1">
+              Proyecto 1
+            </h4>
+            <p class="proyect__text" aria-label="Descripción del Proyecto 1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              magnam alias voluptates nostrum. Sapiente, incidunt fugit?
+              Asperiores, commodi eveniet, sint omnis, reiciendis animi ad iste
+              et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet magnam alias voluptates
+              nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
+              sint omnis, reiciendis animi ad iste et delectus ipsa neque eaque.
+            </p>
+            <div class="content__skills">
+              <img
+                src="img/skills/HTML.svg"
+                alt="Icono de HTML"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/CSS.svg"
+                alt="Icono de CSS"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/Javascript.svg"
+                alt="Icono de Javascript"
+                class="img__skill"
+              />
             </div>
-            <img src="img/proyect.png" alt="Imagen del Proyecto 1" class="proyect__img" />
-          </div>
-          <div class="content__proyect">
-            <img src="img/proyect.png" alt="Imagen del Proyecto 2" class="proyect__img" />
-            <div class="content__proyect-text">
-              <h4 class="proyect__title"  aria-label="Título: Proyecto 2">Proyecto 2</h4>
-              <p class="proyect__text" aria-label="Descripción del Proyecto 2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                magnam alias voluptates nostrum. Sapiente, incidunt fugit?
-                Asperiores, commodi eveniet, sint omnis, reiciendis animi ad
-                iste et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Amet magnam alias voluptates
-                nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
-                sint omnis, reiciendis animi ad iste et delectus ipsa neque
-                eaque.
-              </p>
-              <div class="content__skills">
-                <img src="img/skills/HTML.svg" alt="Icono de HTML" class="img__skill" />
-                <img src="img/skills/CSS.svg" alt="Icono de CSS" class="img__skill" />
-                <img
-                  src="img/skills/Javascript.svg"
-                  alt="Icono de Javascript"
-                  class="img__skill"
-                />
-              </div>
-              <div class="content__btns">
-                <button class="btn__degradado" ria-label="Ver el Proyecto 2 en la web">Ver en la web</button>
-                <button class="btn__degradado" aria-label="Abrir el Repositorio del Proyecto 2 en Github">Repositorio en Github</button>
-              </div>
+            <div class="content__btns">
+              <button
+                class="btn__degradado"
+                aria-label="Ver el Proyecto 1 en la web"
+              >
+                Ver en la web
+              </button>
+              <button
+                class="btn__degradado"
+                aria-label="Abrir el Repositorio del Proyecto 1 en Github"
+              >
+                Repositorio en Github
+              </button>
             </div>
           </div>
-          <div class="content__proyect">
-            <div class="content__proyect-text">
-              <h4 class="proyect__title" aria-label="Título: Proyecto 3">Proyecto 3</h4>
-              <p class="proyect__text" aria-label="Descripción del Proyecto 3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                magnam alias voluptates nostrum. Sapiente, incidunt fugit?
-                Asperiores, commodi eveniet, sint omnis, reiciendis animi ad
-                iste et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Amet magnam alias voluptates
-                nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
-                sint omnis, reiciendis animi ad iste et delectus ipsa neque
-                eaque.
-              </p>
-              <div class="content__skills">
-                <img src="img/skills/HTML.svg" alt="Icono de HTML" class="img__skill" />
-                <img src="img/skills/CSS.svg" alt="Icono de CSS" class="img__skill" />
-                <img
-                  src="img/skills/Javascript.svg"
-                  alt="Icono de Javascript"
-                  class="img__skill"
-                />
-              </div>
-              <div class="content__btns">
-                <button class="btn__degradado" aria-label="Ver el Proyecto 3 en la web">Ver en la web</button>
-                <button class="btn__degradado" aria-label="Abrir el Repositorio del Proyecto 3 en Github">Repositorio en Github</button>
-              </div>
+          <img
+            src="img/proyect.png"
+            alt="Imagen del Proyecto 1"
+            class="proyect__img"
+          />
+        </article>
+        <article class="content__proyect">
+          <img
+            src="img/proyect.png"
+            alt="Imagen del Proyecto 2"
+            class="proyect__img"
+          />
+          <div class="content__proyect-text">
+            <h4 class="proyect__title" aria-label="Título: Proyecto 2">
+              Proyecto 2
+            </h4>
+            <p class="proyect__text" aria-label="Descripción del Proyecto 2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              magnam alias voluptates nostrum. Sapiente, incidunt fugit?
+              Asperiores, commodi eveniet, sint omnis, reiciendis animi ad iste
+              et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet magnam alias voluptates
+              nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
+              sint omnis, reiciendis animi ad iste et delectus ipsa neque eaque.
+            </p>
+            <div class="content__skills">
+              <img
+                src="img/skills/HTML.svg"
+                alt="Icono de HTML"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/CSS.svg"
+                alt="Icono de CSS"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/Javascript.svg"
+                alt="Icono de Javascript"
+                class="img__skill"
+              />
             </div>
-            <img src="img/proyect.png" alt="Imagen del Proyecto 3" class="proyect__img" />
-          </div>
-          <div class="content__proyect">
-            <img src="img/proyect.png"  alt="Imagen del Proyecto 4" class="proyect__img" />
-            <div class="content__proyect-text">
-              <h4 class="proyect__title"  aria-label="Título: Proyecto 4">Proyecto 4</h4>
-              <p class="proyect__text" aria-label="Descripción del Proyecto 4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                magnam alias voluptates nostrum. Sapiente, incidunt fugit?
-                Asperiores, commodi eveniet, sint omnis, reiciendis animi ad
-                iste et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Amet magnam alias voluptates
-                nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
-                sint omnis, reiciendis animi ad iste et delectus ipsa neque
-                eaque.
-              </p>
-              <div class="content__skills">
-                <img src="img/skills/HTML.svg" alt="Icono de HTML" class="img__skill" />
-                <img src="img/skills/CSS.svg" alt="Icono de CSS" class="img__skill" />
-                <img
-                  src="img/skills/Javascript.svg"
-                  alt="Icono de Javascript"
-                  class="img__skill"
-                />
-              </div>
-              <div class="content__btns">
-                <button class="btn__degradado" aria-label="Ver el Proyecto 4 en la web">Ver en la web</button>
-                <button class="btn__degradado" aria-label="Abrir el Repositorio del Proyecto 4 en Github">Repositorio en Github</button>
-              </div>
-            </div>
-          </div>
-          <div class="content__proyect">
-            <div class="content__proyect-text">
-              <h4 class="proyect__title"  aria-label="Título: Proyecto 5">Proyecto 5</h4>
-              <p class="proyect__text" aria-label="Descripción del Proyecto 5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                magnam alias voluptates nostrum. Sapiente, incidunt fugit?
-                Asperiores, commodi eveniet, sint omnis, reiciendis animi ad
-                iste et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Amet magnam alias voluptates
-                nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
-                sint omnis, reiciendis animi ad iste et delectus ipsa neque
-                eaque.
-              </p>
-              <div class="content__skills">
-                <img src="img/skills/HTML.svg" alt="Icono de HTML" class="img__skill" />
-                <img src="img/skills/CSS.svg" alt="Icono de CSS" class="img__skill" />
-                <img
-                  src="img/skills/Javascript.svg"
-                  alt="Icono de Javascript"
-                  class="img__skill"
-                />
-              </div>
-              <div class="content__btns">
-                <button class="btn__degradado" aria-label="Ver el Proyecto 5 en la web">Ver en la web</button>
-                <button class="btn__degradado" aria-label="Abrir el Repositorio del Proyecto 5 en Github">Repositorio en Github</button>
-              </div>
-            </div>
-            <img src="img/proyect.png"  alt="Imagen del Proyecto 5" class="proyect__img" />
-          </div>
-          <div class="content__proyect">
-            <img src="img/proyect.png"  alt="Imagen del Proyecto 6" class="proyect__img" />
-            <div class="content__proyect-text">
-              <h4 class="proyect__title"  aria-label="Título: Proyecto 6" >Proyecto 6</h4>
-              <p class="proyect__text"  aria-label="Descripción del Proyecto 6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                magnam alias voluptates nostrum. Sapiente, incidunt fugit?
-                Asperiores, commodi eveniet, sint omnis, reiciendis animi ad
-                iste et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Amet magnam alias voluptates
-                nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
-                sint omnis, reiciendis animi ad iste et delectus ipsa neque
-                eaque.
-              </p>
-              <div class="content__skills">
-                <img src="img/skills/HTML.svg" alt="Icono de HTML" class="img__skill" />
-                <img src="img/skills/CSS.svg" alt="Icono de CSS" class="img__skill" />
-                <img
-                  src="img/skills/Javascript.svg"
-                  alt="Icono de Javascript"
-                  class="img__skill"
-                />
-              </div>
-              <div class="content__btns">
-                <button class="btn__degradado" aria-label="Ver el Proyecto 6 en la web">Ver en la web</button>
-                <button class="btn__degradado" aria-label="Abrir el Repositorio del Proyecto 6 en Github">Repositorio en Github</button>
-              </div>
+            <div class="content__btns">
+              <button
+                class="btn__degradado"
+                ria-label="Ver el Proyecto 2 en la web"
+              >
+                Ver en la web
+              </button>
+              <button
+                class="btn__degradado"
+                aria-label="Abrir el Repositorio del Proyecto 2 en Github"
+              >
+                Repositorio en Github
+              </button>
             </div>
           </div>
-        </div>
+        </article>
+        <article class="content__proyect reverse">
+          <div class="content__proyect-text">
+            <h4 class="proyect__title" aria-label="Título: Proyecto 3">
+              Proyecto 3
+            </h4>
+            <p class="proyect__text" aria-label="Descripción del Proyecto 3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              magnam alias voluptates nostrum. Sapiente, incidunt fugit?
+              Asperiores, commodi eveniet, sint omnis, reiciendis animi ad iste
+              et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet magnam alias voluptates
+              nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
+              sint omnis, reiciendis animi ad iste et delectus ipsa neque eaque.
+            </p>
+            <div class="content__skills">
+              <img
+                src="img/skills/HTML.svg"
+                alt="Icono de HTML"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/CSS.svg"
+                alt="Icono de CSS"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/Javascript.svg"
+                alt="Icono de Javascript"
+                class="img__skill"
+              />
+            </div>
+            <div class="content__btns">
+              <button
+                class="btn__degradado"
+                aria-label="Ver el Proyecto 3 en la web"
+              >
+                Ver en la web
+              </button>
+              <button
+                class="btn__degradado"
+                aria-label="Abrir el Repositorio del Proyecto 3 en Github"
+              >
+                Repositorio en Github
+              </button>
+            </div>
+          </div>
+          <img
+            src="img/proyect.png"
+            alt="Imagen del Proyecto 3"
+            class="proyect__img"
+          />
+        </article>
+        <article class="content__proyect">
+          <img
+            src="img/proyect.png"
+            alt="Imagen del Proyecto 4"
+            class="proyect__img"
+          />
+          <div class="content__proyect-text">
+            <h4 class="proyect__title" aria-label="Título: Proyecto 4">
+              Proyecto 4
+            </h4>
+            <p class="proyect__text" aria-label="Descripción del Proyecto 4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              magnam alias voluptates nostrum. Sapiente, incidunt fugit?
+              Asperiores, commodi eveniet, sint omnis, reiciendis animi ad iste
+              et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet magnam alias voluptates
+              nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
+              sint omnis, reiciendis animi ad iste et delectus ipsa neque eaque.
+            </p>
+            <div class="content__skills">
+              <img
+                src="img/skills/HTML.svg"
+                alt="Icono de HTML"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/CSS.svg"
+                alt="Icono de CSS"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/Javascript.svg"
+                alt="Icono de Javascript"
+                class="img__skill"
+              />
+            </div>
+            <div class="content__btns">
+              <button
+                class="btn__degradado"
+                aria-label="Ver el Proyecto 4 en la web"
+              >
+                Ver en la web
+              </button>
+              <button
+                class="btn__degradado"
+                aria-label="Abrir el Repositorio del Proyecto 4 en Github"
+              >
+                Repositorio en Github
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="content__proyect reverse">
+          <div class="content__proyect-text">
+            <h4 class="proyect__title" aria-label="Título: Proyecto 5">
+              Proyecto 5
+            </h4>
+            <p class="proyect__text" aria-label="Descripción del Proyecto 5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              magnam alias voluptates nostrum. Sapiente, incidunt fugit?
+              Asperiores, commodi eveniet, sint omnis, reiciendis animi ad iste
+              et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet magnam alias voluptates
+              nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
+              sint omnis, reiciendis animi ad iste et delectus ipsa neque eaque.
+            </p>
+            <div class="content__skills">
+              <img
+                src="img/skills/HTML.svg"
+                alt="Icono de HTML"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/CSS.svg"
+                alt="Icono de CSS"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/Javascript.svg"
+                alt="Icono de Javascript"
+                class="img__skill"
+              />
+            </div>
+            <div class="content__btns">
+              <button
+                class="btn__degradado"
+                aria-label="Ver el Proyecto 5 en la web"
+              >
+                Ver en la web
+              </button>
+              <button
+                class="btn__degradado"
+                aria-label="Abrir el Repositorio del Proyecto 5 en Github"
+              >
+                Repositorio en Github
+              </button>
+            </div>
+          </div>
+          <img
+            src="img/proyect.png"
+            alt="Imagen del Proyecto 5"
+            class="proyect__img"
+          />
+        </article>
+        <article class="content__proyect">
+          <img
+            src="img/proyect.png"
+            alt="Imagen del Proyecto 6"
+            class="proyect__img"
+          />
+          <div class="content__proyect-text">
+            <h4 class="proyect__title" aria-label="Título: Proyecto 6">
+              Proyecto 6
+            </h4>
+            <p class="proyect__text" aria-label="Descripción del Proyecto 6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              magnam alias voluptates nostrum. Sapiente, incidunt fugit?
+              Asperiores, commodi eveniet, sint omnis, reiciendis animi ad iste
+              et delectus ipsa neque eaque. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet magnam alias voluptates
+              nostrum. Sapiente, incidunt fugit? Asperiores, commodi eveniet,
+              sint omnis, reiciendis animi ad iste et delectus ipsa neque eaque.
+            </p>
+            <div class="content__skills">
+              <img
+                src="img/skills/HTML.svg"
+                alt="Icono de HTML"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/CSS.svg"
+                alt="Icono de CSS"
+                class="img__skill"
+              />
+              <img
+                src="img/skills/Javascript.svg"
+                alt="Icono de Javascript"
+                class="img__skill"
+              />
+            </div>
+            <div class="content__btns">
+              <button
+                class="btn__degradado"
+                aria-label="Ver el Proyecto 6 en la web"
+              >
+                Ver en la web
+              </button>
+              <button
+                class="btn__degradado"
+                aria-label="Abrir el Repositorio del Proyecto 6 en Github"
+              >
+                Repositorio en Github
+              </button>
+            </div>
+          </div>
+        </article>
       </section>
       <section class="skills" id="habilidades">
         <img
@@ -287,54 +456,110 @@
           alt="Imagen abstracta 1"
           class="skills__image skills__image--variant1"
         />
-        <h3 class="skills__title" aria-label="Título: Habilidades">Habilidades</h3>
+        <h3 class="skills__title" aria-label="Título: Habilidades">
+          Habilidades
+        </h3>
         <div class="skills__content">
           <div class="content__skill">
-            <img src="img/skills/HTML.svg" alt="Icono de HTML" class="skill__img" />
+            <img
+              src="img/skills/HTML.svg"
+              alt="Icono de HTML"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: HTML">HTML</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/CSS.svg" alt="Icono de CSS" class="skill__img" />
+            <img
+              src="img/skills/CSS.svg"
+              alt="Icono de CSS"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: CSS">CSS</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Javascript.svg" alt="Icono de Javascript" class="skill__img" />
-            <p class="skill__title" aria-label="Habilidad: Javascript">Javascript</p>
+            <img
+              src="img/skills/Javascript.svg"
+              alt="Icono de Javascript"
+              class="skill__img"
+            />
+            <p class="skill__title" aria-label="Habilidad: Javascript">
+              Javascript
+            </p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/React.svg" alt="Icono de React" class="skill__img" />
+            <img
+              src="img/skills/React.svg"
+              alt="Icono de React"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: React">React</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Redux.svg" alt="Icono de Redux" class="skill__img" />
+            <img
+              src="img/skills/Redux.svg"
+              alt="Icono de Redux"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: Redux">Redux</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Node.svg" alt="Icono de Node JS" class="skill__img" />
+            <img
+              src="img/skills/Node.svg"
+              alt="Icono de Node JS"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: Node JS">Node JS</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Express.svg" alt="Icono de Express" class="skill__img" />
+            <img
+              src="img/skills/Express.svg"
+              alt="Icono de Express"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: Express">Express</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Postgre.svg" alt="Icono de Postgre SQL" class="skill__img" />
-            <p class="skill__title" aria-label="Habilidad: Postgre SQL">Postgre SQL</p>
+            <img
+              src="img/skills/Postgre.svg"
+              alt="Icono de Postgre SQL"
+              class="skill__img"
+            />
+            <p class="skill__title" aria-label="Habilidad: Postgre SQL">
+              Postgre SQL
+            </p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/sequelize.svg" alt="Icono de Sequelize" class="skill__img" />
-            <p class="skill__title" aria-label="Habilidad: Sequelize">Sequelize</p>
+            <img
+              src="img/skills/sequelize.svg"
+              alt="Icono de Sequelize"
+              class="skill__img"
+            />
+            <p class="skill__title" aria-label="Habilidad: Sequelize">
+              Sequelize
+            </p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Figma.svg" alt="Icono de Figma" class="skill__img" />
+            <img
+              src="img/skills/Figma.svg"
+              alt="Icono de Figma"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: Figma">Figma</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Git.svg" alt="Icono de Git" class="skill__img" />
+            <img
+              src="img/skills/Git.svg"
+              alt="Icono de Git"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: Git">Git</p>
           </div>
           <div class="content__skill">
-            <img src="img/skills/Github.svg" alt="Icono de Github" class="skill__img" />
+            <img
+              src="img/skills/Github.svg"
+              alt="Icono de Github"
+              class="skill__img"
+            />
             <p class="skill__title" aria-label="Habilidad: Github">Github</p>
           </div>
         </div>
@@ -352,7 +577,10 @@
             colaboración en un proyecto o simplemente decir hola, complete su
             información en el siguiente formulario a continuación o envía un
             correo electrónico a
-            <a href="mailto:solabigail00@hotmail.com?subject=Mail desde mi portfolio" class="text__link" id="email-link"
+            <a
+              href="mailto:solabigail00@hotmail.com?subject=Mail desde mi portfolio"
+              class="text__link"
+              id="email-link"
               >solabigail00@hotmail.com</a
             >
             y hablemos. Espero tener noticias suyas muy pronto :)
@@ -399,12 +627,16 @@
               <label for="textarea" class="textarea__label">Mensaje</label>
             </div>
             <button class="btn">
-              <span class="btn__text" aria-label="Enviar formulario">Enviar</span>
+              <span class="btn__text" aria-label="Enviar formulario"
+                >Enviar</span
+              >
             </button>
           </form>
         </div>
         <div class="content__copy">
-          <p class="copy__text" aria-label="Información del pie de página">Sol Abigail Rázuri Fiorilli. Hecho en 2023</p>
+          <p class="copy__text" aria-label="Información del pie de página">
+            Sol Abigail Rázuri Fiorilli. Hecho en 2023
+          </p>
         </div>
       </section>
     </main>
