@@ -16,6 +16,13 @@ btnUpScroll.addEventListener("click", () => {
     inicioSection.scrollIntoView({ behavior: "smooth" });
 });
 
+// window.addEventListener("scroll", () => {
+//     header.style.backgroundColor = window.scrollY > 550 ? "#6c5b7b" : "#6c5b7b24";
+// });
+
 window.addEventListener("scroll", () => {
-    header.style.backgroundColor = window.scrollY > 700 ? "#6c5b7b" : "#6c5b7b24";
+    const scrollThreshold = window.innerHeight * 0.3;
+
+    header.style.backgroundColor = window.scrollY > scrollThreshold ? "#6c5b7b" : "#6c5b7b24";
 });
+

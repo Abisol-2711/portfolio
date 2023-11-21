@@ -131,7 +131,13 @@
             </div>
           </div>
         </div>
-        <img src="img/PhotoCV.png" alt="Foto de Sol Razuri" class="who__img" />
+        <div class="content__img">
+          <img
+            src="img/PhotoCV.png"
+            alt="Foto de Sol Razuri"
+            class="who__img"
+          />
+        </div>
       </section>
       <section class="proyects" id="proyectos" aria-label="Sección: Proyectos">
         <h3 class="proyects__title" aria-label="Título: Proyectos">
@@ -451,11 +457,11 @@
         </article>
       </section>
       <section class="skills" id="habilidades">
-        <img
+        <!-- <img
           src="img/abstractImg1.png"
           alt="Imagen abstracta 1"
           class="skills__image skills__image--variant1"
-        />
+        /> -->
         <h3 class="skills__title" aria-label="Título: Habilidades">
           Habilidades
         </h3>
@@ -563,13 +569,25 @@
             <p class="skill__title" aria-label="Habilidad: Github">Github</p>
           </div>
         </div>
-        <img
+        <!-- <img
           src="img/abstractImg2.png"
           alt="Imagen abstracta 2"
           class="skills__image skills__image--variant2"
-        />
+        /> -->
       </section>
       <section class="contact" id="contacto">
+        <div class="wave2" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+              style="stroke: none; fill: #f4e7eb"
+            ></path>
+          </svg>
+        </div>
         <div class="content__informacion">
           <h3 class="contact__title" aria-label="Título: Contacto">Contacto</h3>
           <p class="contact__text" aria-label="Descripción de contacto">
@@ -585,7 +603,7 @@
             >
             y hablemos. Espero tener noticias suyas muy pronto :)
           </p>
-          <form action="" class="contact__form">
+          <form action="" method="post" class="contact__form">
             <div class="content__name">
               <input
                 type="text"
@@ -594,6 +612,7 @@
                 required
                 class="name__input"
                 aria-label="Nombre"
+                aria-required="true"
               />
               <span class="contact__highlight"></span>
               <span class="contact__bar"></span>
@@ -607,6 +626,7 @@
                 required
                 class="mail__input"
                 aria-label="Email"
+                aria-required="true"
               />
               <span class="contact__highlight"></span>
               <span class="contact__bar"></span>
@@ -621,6 +641,7 @@
                 id="textarea"
                 required
                 aria-label="Mensaje"
+                aria-required="true"
               ></textarea>
               <span class="contact__highlight"></span>
               <span class="contact__bar"></span>
@@ -640,9 +661,11 @@
         </div>
       </section>
     </main>
-    <button class="btn__up" aria-label="Desplazarse hacia arriba">
-      <i class="fa-solid fa-angle-up fa-2xl" style="color: #e6d5da"></i>
-    </button>
+    <footer class="footer" aria-label="Pie de la página">
+      <button class="btn__up" aria-label="Desplazarse hacia arriba">
+        <i class="fa-solid fa-angle-up fa-xl" style="color: #e6d5da"></i>
+      </button>
+    </footer>
     <section class="prueba"></section>
     <script src="index.js"></script>
   </body>
