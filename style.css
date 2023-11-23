@@ -1035,3 +1035,35 @@ body {
     width: 12em;
   }
 }
+
+/*HEADER*/
+
+/* .header {
+  background-color: var(--header-background-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+  width: 100vw;
+  position: fixed;
+  z-index: 1000;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 40em;
+}
+
+.item__link {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-title-subtitle);
+}
+
+.item__link:hover {
+  text-decoration: underline double;
+  color: var(--link-hover-color);
+} */
