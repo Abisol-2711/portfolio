@@ -16,9 +16,6 @@ btnUpScroll.addEventListener("click", () => {
     inicioSection.scrollIntoView({ behavior: "smooth" });
 });
 
-// window.addEventListener("scroll", () => {
-//     header.style.backgroundColor = window.scrollY > 550 ? "#6c5b7b" : "#6c5b7b24";
-// });
 
 window.addEventListener("scroll", () => {
     const scrollThreshold = window.innerHeight * 0.3;
@@ -26,3 +23,9 @@ window.addEventListener("scroll", () => {
     header.style.backgroundColor = window.scrollY > scrollThreshold ? "#6c5b7b" : "#6c5b7b24";
 });
 
+/*Menu Hamburguesa*/
+
+ let hamburger = document.querySelector(".hamburger");
+ hamburger.addEventListener("click", function() {
+   hamburger.classList.toggle("is-active");
+ });

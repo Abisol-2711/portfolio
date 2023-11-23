@@ -18,10 +18,19 @@
       href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
       crossorigin="anonymous"
     />
-    <link href="dist/hamburgers.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header" aria-label="Encabezado de la página">
+      <button
+        class="hamburger hamburger--collapse"
+        type="button"
+        aria-label="Menu"
+        aria-controls="navigation"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
       <nav class="header__menu" aria-label="Menú de navegación">
         <ul class="menu__list">
           <li class="menu__item">
@@ -43,11 +52,6 @@
       </nav>
     </header>
     <main class="main">
-      <button class="hamburger hamburger--collapse is-active" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
       <section class="about" id="inicio" aria-label="Inicio">
         <h1 class="about__title" aria-label="Título: Sol Sol Razuri">
           Soy <span class="title__span">Sol Rázuri</span>
